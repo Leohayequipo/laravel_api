@@ -1,0 +1,26 @@
+//accesos
+web-api-terminal
+
+//recursos
+recurso y coleccion
+
+//api
+php-aplicacion
+se conectan por un vinculo
+
+//crear
+laravel new api
+//creo el modelo controlador-migracion-factory
+php artisan make:model Post -cmf
+
+//
+1: DATABASE-MIGRATIONS En migracion creo los campos y relaciones de la tabla posts
+2: DATABASE-FACTORIES. Creo los datos falsos
+3: DATABASE-seeders. indico cantidad automatica
+
+//crea las tablas y la semilla
+php artisan migrate --seed
+
+/**web**/
+1-routes-web creo la ruta que llama al controlador el controlador usa el modelo (base)
+
