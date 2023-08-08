@@ -24,3 +24,48 @@ php artisan migrate --seed
 /**web**/
 1-routes-web creo la ruta que llama al controlador el controlador usa el modelo (base)
 
+/**/
+Get (obtener-ver)
+post (crear  registo)
+put (actualizar)
+delete
+/*estados HTTP*/
+2XX success
+200 ok
+201 create
+204 no content
+
+3xx
+301 moved permanentu
+
+4xx
+401unathorized
+403 forbidden
+404 not found
+
+5xx
+500 internal server error
+
+/*endpoint*/
+son los enlaces
+dominio/api/v3/posts
+dominio/api/v3/posts/1
+
+dentro de la carpeta principal ejecuto 
+                                    
+php artisan make:controller Api/V1/PostController --api --model=Post
+// Api/V1/PostController Crea la carpeta en el controlador
+//--api crea los metodos de api que son 5 y que se conecte con el modelo Post
+
+//--model=Post
+
+
+
+
+/*planificacion y versiones*/
+configuracion archivos que retornen 1 o varios elementos
+recursos
+coleccion de datos
+
+listado rutas
+ php artisan route:list
