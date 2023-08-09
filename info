@@ -69,3 +69,25 @@ coleccion de datos
 
 listado rutas
  php artisan route:list
+
+ /*postman local (hay que descargarlo)*/
+ http://127.0.0.1:8000/api/v1/posts/1
+
+ //mejoramos el aspecto de la info
+ //para eso creamo un recurso. para virtualizar el nombre de la info que viene de la basa
+
+ php artisan make:resource V1/PostResource
+
+
+ //version 2
+ php artisan make:controller Api/V2/PostController --api --model=Post
+
+ php artisan make:resource V2/PostResource
+
+ ya estan creadas las carpetas en App controllers - Api- v1 y V2
+ tambien ya entan creados en App-Resources- v1 y (V2 PostCollection.php y PostResource)
+
+ //siguiente
+ Agregamos los rutas en api
+
+ en el controlador agregamos los recursos
