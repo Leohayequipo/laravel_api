@@ -91,3 +91,10 @@ listado rutas
  Agregamos los rutas en api
 
  en el controlador agregamos los recursos
+
+ //api privada (puedo usar precio jetstream)
+ composer require laravel/sanctum
+ esto en laravel 9 ya esta cargado
+ 
+ Desde postman cuando intento ahora solitar una respuesta nos tira error porque hay que definir las cabeceras
+ Accept y Application/json
