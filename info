@@ -98,3 +98,31 @@ listado rutas
  
  Desde postman cuando intento ahora solitar una respuesta nos tira error porque hay que definir las cabeceras
  Accept y Application/json
+
+ cuando armamos las apis y lo usamos desde postman hay que armar el encabezado correcto
+ 1- Me logueo y creo el token
+        en el HEADer accept  application/json
+
+        en el body
+        email     de la base   
+        password  de la base (password)
+        name      ej> iphone
+        POST       http://127.0.0.1:8000/api/login
+
+        Esto crea el token
+ 2-
+ HEADer
+ Authorization     Bearer 2|XbxRNeoTFnf7WUczp5jYRVeWbUWKTccdJZwchnmR
+                 // Bearer fijo + token quenerado
+
+ GET http://127.0.0.1:8000/api/v2/posts/7     
+ 
+ /**/
+ 19 ¿Que es un status HTTP indica el error de un servidor?
+ 2xx success
+ 3xx Redirection
+ 4xx Bad request
+ 5xx Server errors
+
+ 9 15
+ 6 14
